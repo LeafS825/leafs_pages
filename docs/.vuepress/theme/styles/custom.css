@@ -1,0 +1,73 @@
+:root {
+}
+
+/* 自定义字体 - 将字体文件放在 docs/.vuepress/public/fonts/ 目录下 */
+@font-face {
+  font-family: 'CustomFont';
+  src: url('/fonts/custom-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 应用到主页所有元素 */
+.home-page,
+.home-page * {
+  font-family: 'CustomFont', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.vp-home-hero,
+.vp-hero,
+.home-hero,
+[class*="home-hero"],
+[class*="vp-hero"] {
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+  padding-left: 64px !important;
+  padding-bottom: 80px !important;
+}
+
+.vp-home-hero .name,
+.vp-hero .name,
+.home-hero .name,
+[class*="home-hero"] .name,
+[class*="vp-hero"] .name {
+  font-size: 2.5rem !important;
+  font-weight: 300 !important;
+  opacity: 0.6 !important;
+}
+
+.vp-home-hero .tagline,
+.vp-hero .tagline,
+.home-hero .tagline,
+[class*="home-hero"] .tagline,
+[class*="vp-hero"] .tagline {
+  font-size: 4.5rem !important;
+  font-weight: 700 !important;
+  background: linear-gradient(120deg, var(--vp-c-brand-1), var(--vp-c-brand-2)) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+}
+
+.vp-home-hero .text,
+.vp-hero .text,
+.home-hero .text,
+[class*="home-hero"] .text,
+[class*="vp-hero"] .text {
+  margin-top: 1rem !important;
+}
+
+.vp-home-hero .actions,
+.vp-hero .actions,
+.home-hero .actions,
+[class*="home-hero"] .actions,
+[class*="vp-hero"] .actions {
+  justify-content: flex-start !important;
+  margin-top: 2rem !important;
+}
+
+/** 深色模式 */
+[data-theme="dark"] {
+}

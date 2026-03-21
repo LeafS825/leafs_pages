@@ -1,0 +1,37 @@
+{
+  "name": "叶背影",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "叶背影の个人主页",
+  "packageManager": "pnpm@10.24.0",
+  "author": "LeafS825 <871850079@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:dev": "vuepress dev docs",
+    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
+    "docs:preview": "http-server docs/.vuepress/dist",
+    "vp-update": "pnpm dlx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "http-server": "^14.1.1",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.26",
+    "vuepress": "2.0.0-rc.26",
+    "vuepress-theme-plume": "1.0.0-rc.192"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "esbuild"
+    ]
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.0.0"
+  },
+  "dependencies": {
+    "postprocessing": "^6.38.2",
+    "three": "^0.182.0"
+  }
+}
