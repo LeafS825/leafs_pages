@@ -301,40 +301,58 @@ onMounted(() => {
 @media screen and (max-width: 768px) {
   .home-page {
     padding: 1.5rem;
+    justify-content: flex-end;
   }
 
   .hitokoto-top {
-    position: static;
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    right: 1.5rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     max-width: 100%;
   }
 
   .name-section {
     position: static;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 0.25rem;
+    width: 100%;
+  }
+
+  .name-wrapper {
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+  }
+
+  .name-prefix {
+    font-size: 4rem;
   }
 
   .name-main {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .github-status {
-    flex-direction: row;
-    margin-left: 0;
-    margin-top: 1rem;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-top: 0;
   }
 
   .info-section {
     position: static;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 0;
+    padding-bottom: 2rem;
+    gap: 0.25rem;
+    width: 100%;
   }
 
   .social-row {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 </style>
