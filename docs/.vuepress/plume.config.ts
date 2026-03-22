@@ -27,16 +27,16 @@ export default defineThemeConfig({
   ],
 
   profile: {
-    avatar: '/plume.svg',
+    avatar: '/favicon.png',
     name: '叶背影',
-    description: '高二学生 | 开源爱好者',
+    description: '高二学生 | SECTL 成员 & 贡献者',
     location: '中国',
     circle: true,
   },
 
   footer: {
     message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-    copyright: '© 2025 叶背影',
+    copyright: '© 2026 叶背影',
   },
 
   navbar,

@@ -300,15 +300,17 @@ onMounted(() => {
 /* 响应式 */
 @media screen and (max-width: 768px) {
   .home-page {
-    padding: 1.5rem;
+    padding: 1rem;
     justify-content: flex-end;
+    min-height: calc(100dvh - 64px);
+    box-sizing: border-box;
   }
 
   .hitokoto-top {
     position: absolute;
-    top: 2rem;
-    left: 1.5rem;
-    right: 1.5rem;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
     text-align: center;
     margin-bottom: 0;
     max-width: 100%;
@@ -316,11 +318,12 @@ onMounted(() => {
 
   .name-section {
     position: static;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     margin-bottom: 0.25rem;
     width: 100%;
+    flex-shrink: 0;
   }
 
   .name-wrapper {
@@ -328,31 +331,34 @@ onMounted(() => {
   }
 
   .name-prefix {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .name-main {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .github-status {
-    flex-direction: column;
-    margin-left: 0.5rem;
-    margin-top: 0;
+    flex-direction: row;
+    margin-left: 0;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
   }
 
   .info-section {
     position: static;
     align-items: flex-start;
     margin-top: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
     gap: 0.25rem;
     width: 100%;
+    flex-shrink: 0;
   }
 
   .social-row {
     flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 0.5rem;
   }
 }
 </style>
