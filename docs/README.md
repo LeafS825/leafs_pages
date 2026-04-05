@@ -306,6 +306,12 @@ onMounted(() => {
     box-sizing: border-box;
   }
 
+  .pixelblast-layer {
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+
   .hitokoto-top {
     position: absolute;
     top: 1rem;
