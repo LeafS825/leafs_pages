@@ -7,7 +7,7 @@
 *.ico binary
 *.gif binary
 *.webp binary
-*.tff binary
+*.ttf binary
 *.woff binary
 *.woff2 binary
 *.pdf binary
