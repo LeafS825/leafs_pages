@@ -71,3 +71,53 @@
 /** 深色模式 */
 [data-theme="dark"] {
 }
+
+/* ============================================================
+   首页：导航 / 页脚透明化
+   背景插画（.home-page 内 fixed 层）透出，仅在首页生效
+   ============================================================ */
+
+/* 导航背景、导航底部分隔线、页脚上边框都引用这两个变量 */
+body:has(.home-page) {
+  --vp-nav-bg-color: transparent;
+  --vp-c-gutter: transparent;
+}
+
+/* 导航内文字改为白色（顶部有深色渐变遮罩），搜索框改半透明玻璃 */
+body:has(.home-page) .vp-navbar {
+  --vp-c-text-1: #fff;
+  --vp-c-text-2: rgba(255, 255, 255, 0.85);
+  --vp-c-text-3: rgba(255, 255, 255, 0.6);
+  --vp-c-divider: rgba(255, 255, 255, 0.3);
+  --vp-c-bg-alt: rgba(255, 255, 255, 0.16);
+  --vp-c-brand-1: #5fded1;
+  color: #fff;
+  text-shadow: 0 1px 10px rgba(16, 24, 58, 0.5);
+}
+
+/* 页脚透明；插画底部为浅色云雾，固定用深色文字（深浅色模式皆可读） */
+body:has(.home-page) .vp-footer {
+  background-color: transparent;
+  border-top-color: transparent;
+  --vp-c-text-1: #22304f;
+  --vp-c-text-2: rgba(34, 48, 79, 0.85);
+}
+
+body:has(.home-page) .vp-footer .message,
+body:has(.home-page) .vp-footer .copyright {
+  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.55);
+}
+
+/* ============================================================
+   去掉「回到顶部」按钮上的阅读进度百分比与圆环，
+   仅保留回到顶部的箭头按钮
+   ============================================================ */
+.vp-back-to-top .percent,
+.vp-back-to-top svg {
+  display: none !important;
+}
+
+/* 滚动中百分比显示时图标是隐藏的，这里强制常显 */
+.vp-back-to-top .icon {
+  opacity: 1 !important;
+}
